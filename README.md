@@ -1,5 +1,7 @@
 ## MLRA update from v42 to v52
 
+problem: tables inside the database need to use mlra v52, specifically the 
+columns mlra_name and mlrarsym. These two fields have different sizes on both versions. mlra_name increases from 200 to 254, while mlrarsym 
 
 - v42: mlra_name(varchar 200), mlrarsym(varchar 4)
 - v52: mlra_name(varchar 254), mlrarsym(varchar 5)
